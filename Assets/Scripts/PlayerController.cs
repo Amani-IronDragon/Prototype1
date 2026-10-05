@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     
     //The car's speed
-    public float speed = 35;
+    public float speed = 20.0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +17,6 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         //Commnad that the car move at the pace of seconds, so that how much time passes dictates how far the car has traveled.
-        transform.Translate(Vector3.forward * Time.deltaTime * 35);
+        transform.Translate(Vector3.forward * Time.deltaTime * speed);
     }
 }
